@@ -1,0 +1,15 @@
+  body {
+    display: block;
+    min-height: 100vh;
+    background-color: black;
+  }
+
+  h1 {
+    color: white;
+    padding: 2rem;
+  }
+
+  h2 {
+    color: red;
+    padding: 0 2rem;
+  }
