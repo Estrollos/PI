@@ -1,13 +1,13 @@
 <nav>
   <div class="logo">
-    <img src="subsonic\src\assets\subsonic.png">
+    <img ngSrc="/subsonic.png" fill (click)="navToHome()">
   </div>
   <ul>
-    <li><a routerLink="/events">EVENTS</a></li>
-    <li><a routerLink="/store">STORE</a></li>
-    <li><a routerLink="/faq">FAQ</a></li>
+    <li><a (click)="navToEvents()">EVENTS</a></li>
+    <li><a (click)="navToStore()">STORE</a></li>
+    <li><a (click)="navToFAQ()">FAQ</a></li>
     <div class="my-account">
-      <li><a routerLink="/myaccount">MY ACCOUNT</a></li>
+      <li><a (click)="navToLogin()">MY ACCOUNT</a></li>
     </div>
   </ul>
 </nav>
