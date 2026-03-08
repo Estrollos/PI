@@ -9,24 +9,31 @@
 </div>
 
 <div class="right">
-  <h2>T-Shirt</h2>
+  <h1>T-Shirt</h1>
   <p>20€</p>
   <p>Description</p>
   <p>Color</p>
+
+  <input type="radio" id="Black" name="color" value="Black" [(ngModel)]="color" (ngModelChange)="color" (click)="toggleColor('Black')">
+  <label for="Black">Black</label>
+
+  <input type="radio" id="White" name="color" value="White" [(ngModel)]="color" (ngModelChange)="color" (click)="toggleColor('White')">
+  <label for="White">White</label>
+
   <p>Size</p>
-  <input type="radio" id="S" name="size" value="S" [(ngModel)]="size" (ngModelChange)="size" (click)="toggleDay('S')">
+  <input type="radio" id="S" name="size" value="S" [(ngModel)]="size" (ngModelChange)="size" (click)="toggleSize('S')">
   <label for="S">S</label>
 
-  <input type="radio" id="M" name="size" value="M" [(ngModel)]="size" (ngModelChange)="size" (click)="toggleDay('M')">
+  <input type="radio" id="M" name="size" value="M" [(ngModel)]="size" (ngModelChange)="size" (click)="toggleSize('M')">
   <label for="M">M</label>
 
-  <input type="radio" id="L" name="size" value="L" [(ngModel)]="size" (ngModelChange)="size" (click)="toggleDay('L')">
+  <input type="radio" id="L" name="size" value="L" [(ngModel)]="size" (ngModelChange)="size" (click)="toggleSize('L')">
   <label for="L">L</label>
 
-  <input type="radio" id="XL" name="size" value="XL" [(ngModel)]="size" (ngModelChange)="size" (click)="toggleDay('XL')">
+  <input type="radio" id="XL" name="size" value="XL" [(ngModel)]="size" (ngModelChange)="size" (click)="toggleSize('XL')">
   <label for="XL">XL</label>
 
-  <input type="radio" id="XXL" name="size" value="XXL" [(ngModel)]="size" (ngModelChange)="size" (click)="toggleDay('XLL')">
+  <input type="radio" id="XXL" name="size" value="XXL" [(ngModel)]="size" (ngModelChange)="size" (click)="toggleSize('XLL')">
   <label for="XXL">XXL</label>
 
   <p></p>

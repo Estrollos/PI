@@ -1,7 +1,7 @@
 .separator{
     position: fixed;
     top: 0;
-    right: 53rem;
+    right: 60rem;
     border-left: 2px solid red;
     height: 100vh;
 }
@@ -16,6 +16,17 @@
   margin-top: 15px;
   margin-bottom: 10px;
   background: white;
+}
+
+p {
+  margin: 0;
+  min-width: 120px;
+  text-align: center;
+}
+
+img {
+  border-radius: 6px;
+  object-fit: cover;
 }
 
 .col{

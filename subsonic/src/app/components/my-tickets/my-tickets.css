@@ -5,17 +5,14 @@
   padding-bottom: 1rem;
 }
 
-
-button{
-  display: flex;
-  flex-direction: column;
-  margin-top: 2rem;
-  margin-left: 1.5rem;
+h1{
+  font-size: 40px;
 }
 
 .tabs {
   display: flex;
   padding: 0 1.5rem;
+  padding-top: 2rem;
 }
 
 input[type="radio"] {
@@ -37,4 +34,37 @@ input[type="radio"]:checked + label {
 a{
   color:white;
   text-decoration: none ;
+}
+
+.ticket-card {
+  display: flex;
+  align-items: center;
+  background: #1a1a2e;
+  border-radius: 8px;
+  margin: 2rem 1.5rem;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+img {
+  width: 90px;
+  height: 80px;
+  object-fit: cover;
+  padding-left: 10px;
+}
+
+.ticket-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1.5rem;
+  min-width: 60px;
+}
+
+.ticket-name {
+  padding: 0 1rem;
+  margin: 0.2rem 0;
+  font-size: 1.5rem;
+  font-weight: bold;
 }

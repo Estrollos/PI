@@ -10,15 +10,24 @@ img{
 
 .right{
   position: absolute;
-  right: 10rem;
+  right: 15rem;
   top:0;
   margin-top: 5rem;
+}
+
+h1{
+  font-size: 30px;
+}
+
+p{
+  font-size: 20px;
 }
 
 button{
   background-color: black;
   color: white;
   width: 200px;
+  font-size: 15px;
 }
 
 input[type="radio"] {

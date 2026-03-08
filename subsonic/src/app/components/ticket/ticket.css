@@ -1,12 +1,44 @@
+.text{
+  padding-left: 5rem;
+}
+.text h2{
+  padding-top: 1rem;
+}
+
+h1{
+  font-size: 30px;
+  padding-top: 2rem;
+}
+
 .event-container{
-  grid-template-columns: repeat(1fr 1fr 1fr);
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 10px 10px 10px 30px;
+  padding: 1.5rem;
   border: 1px solid black;
-  margin-top: 20px;
-  width: 6rem;
-  height: 12rem;
+  border-radius: 8px;
+  width: 10rem;
+  gap: 1rem;
+}
+
+.event-container p{
+  font-size: 20px;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.counter button {
+  font-size: 1.2rem;
+}
+
+label {
+  font-size: 1rem;
+  min-width: 1rem;
+  text-align: center;
 }
 
 .right{
@@ -17,5 +49,12 @@
 }
 
 a{
-  color:black;
+  color:white;
+  text-decoration: none;
+}
+
+.buy{
+  width: 7rem;
+  height: 2.5rem;
+  font-size: 20px;
 }

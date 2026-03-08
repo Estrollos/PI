@@ -1,11 +1,16 @@
 :host{
   position: absolute;
-  left: 2rem;
+  left: 5rem;
+}
+
+h1{
+  font-size: 40px;
+  text-align: center;
 }
 
 .products-row{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(3, auto);
   gap: 50px;
 }

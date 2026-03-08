@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import { NgOptimizedImage } from "@angular/common";
 import { FormsModule } from '@angular/forms';
-import { Output } from '@angular/core';
-import { EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-product',
@@ -12,16 +10,17 @@ import { EventEmitter } from '@angular/core';
 })
 export class Product {
   size:string = "";
+  color:string ="";
 
-  @Output() selecteProduct = new EventEmitter<string>();
-
-  sendProduct(size: string) {
-    this.selecteProduct.emit(size);
-  }
-
-  toggleDay(value: string) {
+  toggleSize(value: string) {
     if (this.size === value) {
       this.size = '';
+    }
+  }
+
+  toggleColor(value:string){
+    if(this.color === value){
+      this.color = '';
     }
   }
 }
