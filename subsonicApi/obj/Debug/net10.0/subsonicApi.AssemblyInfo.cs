@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("subsonicApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2c559d573a0495058ebf71487cc4abb9082c12ef")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+599859860ce5c6c88888d559663e1af0f342586a")]
 [assembly: System.Reflection.AssemblyProductAttribute("subsonicApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("subsonicApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

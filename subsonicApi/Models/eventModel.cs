@@ -3,7 +3,7 @@ public class EventModel {
     private readonly EventDAO _eventoDAO;
 
     public EventModel(DAOFactory factory) {
-        _eventoDAO = factory.CreatEventDAO();
+        _eventoDAO = factory.CreateEventDAO();
     }
     public async Task<List<EventDTO>> GetAll()
     {

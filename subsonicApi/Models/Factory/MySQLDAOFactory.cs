@@ -5,7 +5,5 @@ public class MySQLDAOFactory : DAOFactory {
         _context = context;
     }
 
-    public EventDAO CreateEventoDAO() => new EventDAOMySQL(_context);
-    public ClientDAO CreateClienteDAO() => new ClientDAOMySQL(_context);
-    public ProductDAO CreateProductoDAO() => new ProductDAOMySQL(_context);
+    public EventDAO CreateEventDAO() => new EventDAOMySQL(_context);
 }

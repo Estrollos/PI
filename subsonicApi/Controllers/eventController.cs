@@ -32,11 +32,13 @@ public class eventController : ControllerBase {
     }
 
     [HttpPut]
+    [ProducesResponseType(typeof(EventDTO), StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async Task<IActionResult> Update(EventDTO dto) {
         if(dto == null)
             return BadRequest();
         await _model.Update(dto);
-        return NoContent(); 
+        return Ok(dto); 
     }
 
     [HttpDelete("{id}")]

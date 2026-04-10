@@ -1,5 +1,5 @@
 public class SpaceDTO{
-    public int pid { get; set; }
+    public int id { get; set; }
     public string dia { get; set; }
     public string escenario { get; set; }
     public int precio { get; set; }
