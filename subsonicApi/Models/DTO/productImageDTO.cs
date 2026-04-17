@@ -1,7 +1,7 @@
-public class productImageDTO
+public class ProductImageDTO
 {
-    public int id { get; set; }
-    public string producto_id { get; set; }
-    public string url { get; set; }
-    public ProductDTO producto { get; set; }
+    public int Id { get; set; }
+    public int ProductoId { get; set; }
+    public string Url { get; set; }
+    public virtual ProductDTO Producto { get; set; }
 }

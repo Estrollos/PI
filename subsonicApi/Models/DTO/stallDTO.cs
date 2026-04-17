@@ -1,10 +1,8 @@
 public class StallDTO{
-    public int id { get; set; }
-    public int espacio_id { get; set; }
-    public int cliente_id { get; set; }
-    public string nombre { get; set; }
-    public string info { get; set; }
-    public SpaceDTO espacio { get; set; }
-    public ClientDTO cliente { get; set; }
-    public List<stallTypeDTO> tipos { get; set; }
+    public int Id { get; set; }
+    public int EspacioId { get; set; }
+    public string Nombre { get; set; }
+    public string Info { get; set; }
+    public virtual SpaceDTO Espacio { get; set; }
+    public virtual List<StallTypeDTO> Tipos { get; set; }
 }

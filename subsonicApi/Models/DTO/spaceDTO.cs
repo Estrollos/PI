@@ -1,7 +1,11 @@
+using subsonicApi.Enums;
+
 public class SpaceDTO{
-    public int id { get; set; }
-    public string dia { get; set; }
-    public string escenario { get; set; }
-    public int precio { get; set; }
-    public bool libre { get; set; }
+    public int Id { get; set; }
+    public int ClienteId { get; set; }
+    public DayEnum Dia { get; set; }
+    public StageEnum Escenario { get; set; }
+    public int Precio { get; set; }
+    public bool Libre { get; set; }
+    public virtual ClientDTO Cliente { get; set; }
 }

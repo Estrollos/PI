@@ -1,8 +1,9 @@
-// Model/EventoModel.cs
-public class EventModel {
-    private readonly EventDAO _eventoDAO;
+using subsonicApi.Models.DAO.Interfaces;
 
-    public EventModel(DAOFactory factory) {
+public class EventModel {
+    private readonly IEventDAO _eventoDAO;
+
+    public EventModel(IDAOFactory factory) {
         _eventoDAO = factory.CreateEventDAO();
     }
     public async Task<List<EventDTO>> GetAll()
@@ -18,7 +19,7 @@ public class EventModel {
     public async Task Create(EventDTO dto) => await _eventoDAO.Create(dto);
 
     public async Task Update(EventDTO dto) {
-        var existe = await _eventoDAO.GetById(dto.id);
+        var existe = await _eventoDAO.GetById(dto.Id);
         if (existe == null)
             throw new Exception("Evento no encontrado");
         await _eventoDAO.Update(dto);

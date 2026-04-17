@@ -1,5 +1,7 @@
-public class stallTypeDTO{
-    public int puesto_id { get; set; }
-    public string tipo { get; set; }
-    public StallDTO puesto { get; set; }
+using subsonicApi.Enums;
+
+public class StallTypeDTO{
+    public int PuestoId { get; set; }
+    public StallTypeEnum Tipo { get; set; }
+    public virtual StallDTO Puesto { get; set; }
 }

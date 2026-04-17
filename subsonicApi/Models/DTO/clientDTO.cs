@@ -1,10 +1,12 @@
+using subsonicApi.Enums;
+
 public class ClientDTO{
-    public int id { get; set; }
-    public string nombre { get; set; }
-    public string apellido { get; set; }
-    public string email { get; set; }
-    public string contrasena { get; set; }
-    public string direccion { get; set; }
-    public string tlf { get; set; }
-    public string rol { get; set; }
+    public int Id { get; set; }
+    public string Nombre { get; set; }
+    public string Apellido { get; set; }
+    public string Email { get; set; }
+    public string Contrasena { get; set; }
+    public string Direccion { get; set; }
+    public string Tlf { get; set; }
+    public RoleEnum Rol { get; set; }
 }

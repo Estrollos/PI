@@ -1,8 +1,10 @@
-public class productVariantDTO{
-    public int id { get; set; }
-    public int producto_id { get; set; }
-    public string color { get; set; }
-    public string talla { get; set; }
-    public int stock { get; set; }
-    public ProductDTO producto { get; set; }
+using subsonicApi.Enums;
+
+public class ProductVariantDTO{
+    public int Id { get; set; }
+    public int ProductoId { get; set; }
+    public string Color { get; set; }
+    public SizeEnum Talla { get; set; }
+    public int Stock { get; set; }
+    public virtual ProductDTO Producto { get; set; }
 }

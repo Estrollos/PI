@@ -1,11 +1,12 @@
+using subsonicApi.Enums;
+
 public class EventDTO{
-    public int id { get; set; }
-	public string escenario { get; set; }
-	public DateTime fecha { get; set; }
-	public string dia { get; set; }
-	public string hora { get; set; }
-	public string info { get; set; }
-	public int price { get; set; }
-	public int stock { get; set; }
-	public string urlImg { get; set; }
+    public int Id { get; set; }
+	public StageEnum Escenario { get; set; }
+	public DateTime Fecha { get; set; }
+	public string Dia { get; set; }
+	public HourEnum Hora { get; set; }
+	public DayEnum Info { get; set; }
+	public int Stock { get; set; }
+	public string UrlImg { get; set; }
 }

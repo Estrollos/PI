@@ -1,10 +1,10 @@
-// Model/DAO/MySQL/EventoDAOMySQL.cs
 using Microsoft.EntityFrameworkCore;
+using subsonicApi.Models.DAO.Interfaces;
 
-public class EventDAOMySQL : EventDAO {
+public class EventDAO : IEventDAO {
     private readonly AppDbContext _context;
 
-    public EventDAOMySQL(AppDbContext context) {
+    public EventDAO(AppDbContext context) {
         _context = context;
     }
 
@@ -21,7 +21,7 @@ public class EventDAOMySQL : EventDAO {
         await _context.SaveChangesAsync();
     }
 
-     public async Task Update(EventDTO dto) {
+    public async Task Update(EventDTO dto) {
         _context.Events.Update(dto);
         await _context.SaveChangesAsync();
     }

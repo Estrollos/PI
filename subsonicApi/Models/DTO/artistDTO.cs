@@ -1,6 +1,6 @@
 public class ArtistDTO{
-    public int id { get; set; }
-    public int evento_id { get; set; }
-    public string nombre { get; set; }
-    public EventDTO evento { get; set; }
+    public int Id { get; set; }
+    public int EventoId { get; set; }
+    public string Nombre { get; set; }
+    public virtual EventDTO Evento { get; set; }
 }

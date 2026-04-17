@@ -1,6 +1,8 @@
+using subsonicApi.Enums;
+
 public class MusicDTO{
-    public int id { get; set; }
-    public string url { get; set; }
-    public string urlImg { get; set; }
-    public string escenario { get; set; }
+    public int Id { get; set; }
+    public string Url { get; set; }
+    public string UrlImg { get; set; }
+    public StageEnum Escenario { get; set; }
 }

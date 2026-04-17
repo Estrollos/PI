@@ -2,10 +2,10 @@ using Microsoft.AspNetCore.Mvc;
 
 [ApiController]
 [Route("api/[controller]")]
-public class eventController : ControllerBase {
+public class EventController : ControllerBase {
     private readonly EventModel _model;
 
-    public eventController(DAOFactory factory) {
+    public EventController(IDAOFactory factory) {
         _model = new EventModel(factory);
     }
 
@@ -28,12 +28,10 @@ public class eventController : ControllerBase {
         if(dto == null)
             return BadRequest();
         await _model.Create(dto);
-        return CreatedAtAction(nameof(GetById), new { id = dto.id }, dto);
+        return CreatedAtAction(nameof(GetById), new { id = dto.Id }, dto);
     }
 
     [HttpPut]
-    [ProducesResponseType(typeof(EventDTO), StatusCodes.Status200OK)]
-    [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async Task<IActionResult> Update(EventDTO dto) {
         if(dto == null)
             return BadRequest();

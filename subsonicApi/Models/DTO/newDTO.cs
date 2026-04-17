@@ -1,7 +1,7 @@
 public class NewsDTO{
-    public string id { get; set; }
-    public string titulo { get; set; }
-    public string subtitulo { get; set; }
-    public string cuerpo { get; set; }
-    public string urlImg { get; set; }
+    public int Id { get; set; }
+    public string Titulo { get; set; }
+    public string Subtitulo { get; set; }
+    public string Cuerpo { get; set; }
+    public string UrlImg { get; set; }
 }
