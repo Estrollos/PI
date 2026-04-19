@@ -6,9 +6,9 @@ namespace subsonicApi.Data
     {
         public void Configure(EntityTypeBuilder<StallTypeDTO> builder)
         {
-            builder.ToTable("puesto_tipo").HasKey(x => new {x.PuestoId, x.Tipo});
+            builder.ToTable("puesto_tipo").HasKey(x => new {x.EspacioId, x.Tipo});
 
-            builder.Property(x => x.PuestoId).HasColumnName("puesto_id");
+            builder.Property(x => x.EspacioId).HasColumnName("espacio_id");
             builder.Property(x => x.Tipo).HasColumnName("tipo");
         }
     }

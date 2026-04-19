@@ -16,6 +16,10 @@ namespace subsonicApi.Data
             builder.Property(x => x.Dia).HasColumnName("dia");
             builder.Property(x => x.Precio).HasColumnName("precio");
             builder.Property(x => x.Libre).HasColumnName("libre");
+            builder.Property(x => x.NombrePuesto).HasColumnName("nombrePuesto");
+            builder.Property(x => x.InfoPuesto).HasColumnName("infoPuesto");
+
+            builder.HasMany(x => x.Tipos).WithOne(x => x.Espacio).HasForeignKey(x => x.EspacioId);
         }
     }
 }

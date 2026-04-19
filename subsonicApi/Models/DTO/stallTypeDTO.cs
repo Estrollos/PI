@@ -1,7 +1,7 @@
 using subsonicApi.Enums;
 
 public class StallTypeDTO{
-    public int PuestoId { get; set; }
+    public int EspacioId { get; set; }
     public StallTypeEnum Tipo { get; set; }
-    public virtual StallDTO Puesto { get; set; }
+    public virtual SpaceDTO Espacio { get; set; }
 }

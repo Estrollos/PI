@@ -6,6 +6,7 @@ using subsonicApi;
 
 [ApiController]
 [Route("api/[controller]")]
+[Authorize]
 public class ClientController : ControllerBase {
     private readonly ClientModel _model;
     private readonly PasswordHasher _passwordHasher;

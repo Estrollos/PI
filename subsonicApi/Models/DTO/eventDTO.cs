@@ -7,6 +7,8 @@ public class EventDTO{
 	public string Dia { get; set; }
 	public HourEnum Hora { get; set; }
 	public DayEnum Info { get; set; }
-	public int Stock { get; set; }
 	public string UrlImg { get; set; }
+	public int NEntradas { get; set; }
+	public int PrecioEntradas { get; set; }
+	public List<ArtistDTO> Artistas { get; set; }
 }

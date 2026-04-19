@@ -16,19 +16,11 @@ public class EventModel {
             throw new Exception("Evento no encontrado");
         return evento;
     }
-    public async Task Create(EventDTO dto) => await _eventoDAO.Create(dto);
 
     public async Task Update(EventDTO dto) {
         var existe = await _eventoDAO.GetById(dto.Id);
         if (existe == null)
             throw new Exception("Evento no encontrado");
         await _eventoDAO.Update(dto);
-    }
-
-    public async Task Delete(int id) {
-        var existe = await _eventoDAO.GetById(id);
-        if (existe == null)
-            throw new Exception("Evento no encontrado");
-        await _eventoDAO.Delete(id);
     }
 }

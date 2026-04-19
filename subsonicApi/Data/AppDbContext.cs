@@ -15,9 +15,7 @@ public class AppDbContext : DbContext
     public DbSet<ProductImageDTO> ProductImages { get; set; }
     public DbSet<ProductVariantDTO> ProductVariants { get; set; }
     public DbSet<SpaceDTO> Spaces { get; set; }
-    public DbSet<StallDTO> Stalls { get; set; }
     public DbSet<StallTypeDTO> StallTypes { get; set; }
-    public DbSet<TicketDTO> Tickets { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -32,8 +30,6 @@ public class AppDbContext : DbContext
         modelBuilder.ApplyConfiguration(new ProductImgTypeConfiguration());
         modelBuilder.ApplyConfiguration(new ProductVariantTypeConfiguration());
         modelBuilder.ApplyConfiguration(new SpaceTypeConfiguration());
-        modelBuilder.ApplyConfiguration(new StallTypeConfiguration());
         modelBuilder.ApplyConfiguration(new StallTypeTypeConfiguration());
-        modelBuilder.ApplyConfiguration(new TicketTypeConfiguration());
     }
 }
