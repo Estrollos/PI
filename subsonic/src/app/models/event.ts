@@ -1,6 +1,11 @@
-export interface Event{
-  date:string;
-  hour:string;
-  stage:string;
+export interface EventModel {
+  id: number;
+  escenario: number;
+  fecha: Date;
+  dia: number;
+  hora: number;
+  info: string;
+  urlImg: string;
+  nEntradas: number;
+  precioEntradas: number;
 }
-

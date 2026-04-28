@@ -79,6 +79,8 @@ builder.Services.AddCors(options =>
     options.AddDefaultPolicy(policy => policy.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
 });
 
+
+
 var app = builder.Build();
 
 app.UseSwagger();
@@ -87,6 +89,7 @@ app.UseSwaggerUI(options =>
     options.SwaggerEndpoint("/swagger/v1/swagger.json", "subsonicApi");
 });
 
+app.UseCors();
 app.UseAuthentication();
 app.UseAuthorization();
 
